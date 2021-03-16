@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "kt-tr"
+version = "0.1.2"
+description = "Calcula as regioes de um trading range"
+authors = ["Valmir Franca <vfranca3@gmail.com>"]
+license = "GPL-2.0-only"
+readme = "README.md"
+repository = "https://github.com/vfranca/kt-tr"
+keywords = ["cli", "trading"]
+classifiers = [
+"Development Status :: 2 - Pre-Alpha",
+"Environment :: Console",
+"Intended Audience :: Financial and Insurance Industry",
+"License :: OSI Approved :: GNU General Public License (GPL)",
+"Natural Language :: Portuguese (Brazilian)",
+"Topic :: Adaptive Technologies",
+"Topic :: Office/Business :: Financial :: Investment"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+black = "^20.8b1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+tr = "kt_tr.cli:cli"

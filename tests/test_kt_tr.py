@@ -23,3 +23,11 @@ def test_calcula_o_terco_superior_da_lateralidade():
 
 def test_calcula_o_terco_inferior_da_lateralidade():
     assert kt_tr.terco_inf(10.0, 30.0) == 40.0
+
+
+def test_movimento_projetado_de_alta():
+    assert kt_tr.mm_alta(100.0, 90.0) == 190.0
+
+
+def test_movimento_projetado_de_baixa():
+    assert kt_tr.mm_baixa(10.0, 90.0) == -80.0

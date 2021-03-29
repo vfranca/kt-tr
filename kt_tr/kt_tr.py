@@ -1,3 +1,6 @@
+"""
+Arquivo de definições
+"""
 topo = 0.0
 fundo = 0.0
 
@@ -24,3 +27,11 @@ def metade(range):
 
 def meio(topo, metade):
     return topo - metade
+
+
+def mm_alta(topo, range):
+    return topo + range
+
+
+def mm_baixa(fundo, range):
+    return fundo - range
